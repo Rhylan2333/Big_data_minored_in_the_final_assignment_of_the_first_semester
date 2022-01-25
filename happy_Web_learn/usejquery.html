@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Using jQuery</title>
+    <script src="./static/js/jquery-3.6.0.min.js"></script>
+    <script type="text/JavaScript">
+        $ (document).ready(function () {
+                $ ("p").click(function () {
+                    $ (this).hide();
+                });
+            });
+        </script>
+</head>
+
+<body>
+    <h1>Using jQuery! </h1>
+    <hr>
+    <div>
+        <span>单击“隐藏1”或“隐藏2”，立即隐藏；单击“不隐藏”，不隐藏。</span>
+    </div>
+    <div>
+        <p>隐藏1</p>
+        <p>隐藏2</p>
+    </div>
+    <div>
+        <span>不隐藏</span><!--这里的span是隐藏功能的关键-->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Operating Event</title>
+    <script src="./static/js/jquery-3.6.0.min.js"></script>
+    <script>
+        // 使用函数on()绑定<p>标签的 click 事件
+        $(document).ready(function () {
+            $("p").on("click", function(){
+                alert($(this).text())
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>Click here 1. </p>
+    <p>Click here 2. </p>
+    <p>Click here 3. </p>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Operating Event</title>
+    <script src="./static/js/jquery-3.6.0.min.js"></script>
+    <script>
+        // 通过$.ajax()函数实现使用POST方式请求 test.py 文件并将data中的数据保存到服务器中，成功后显示保存的数据的功能。
+        $.ajax({
+            type: "POST",
+            url: "test.py",
+            data: {
+                name: "caicai",
+                location: "Xinjiang"
+            },
+            success: function (msg) {
+                alert("Data saved: " + msg)
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <font color='red'>
+        <h1>通过$.ajax()函数实现使用POST方式请求 test.py 文件并将 data 中的数据保存到服务器中，成功后显示保存的数据的功能。</h1>
+    </font>
+</body>
+
+</html>
